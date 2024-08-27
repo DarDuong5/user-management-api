@@ -1,0 +1,156 @@
+{
+    "ladybug" : {
+        "drops" : [
+            {
+                "item" : "royal jelly",
+                "drop_rate" : 50, 
+                "min_quantity" : 1,
+                "max_quantity" : 3
+            },
+            {
+                "item" : "strawberry",
+                "drop_rate" : 75, 
+                "min_quantity" : 1,
+                "max_quantity" : 50
+            },
+            {
+                "item" : "gum drops",
+                "drop_rate" : 25, 
+                "min_quantity" : 1,
+                "max_quantity" : 5
+            },
+            {
+                "item" : "ticket",
+                "drop_rate" : 5, 
+                "min_quantity" : 1,
+                "max_quantity" : 5
+            },
+            {
+                "currency" : "honey",
+                "drop_rate" : 100,
+                "min_quantity" : 250,
+                "max_quantity" : 500
+            }
+        ]
+    },
+    "rhino beetle" : {
+        "drops" : [
+            {
+                "item" : "royal jelly",
+                "drop_rate" : 50, 
+                "min_quantity" : 1,
+                "max_quantity" : 3
+            },
+            {
+                "item" : "blueberry",
+                "drop_rate" : 75, 
+                "min_quantity" : 1,
+                "max_quantity" : 50
+            },
+            {
+                "item" : "gum drops",
+                "drop_rate" : 25, 
+                "min_quantity" : 1,
+                "max_quantity" : 5
+            },
+            {
+                "item" : "ticket",
+                "drop_rate" : 5, 
+                "min_quantity" : 1,
+                "max_quantity" : 5
+            },
+            {
+                "currency" : "honey",
+                "drop_rate" : 100,
+                "min_quantity" : 250,
+                "max_quantity" : 500
+            }
+        ]
+    },
+    "spider" : {
+        "drops" : [
+            {
+                "item" : "royal jelly",
+                "drop_rate" : 80, 
+                "min_quantity" : 1,
+                "max_quantity" : 5
+            },
+            {
+                "item" : "pineapple",
+                "drop_rate" : 75, 
+                "min_quantity" : 1,
+                "max_quantity" : 333
+            },
+            {
+                "item" : "gum drops",
+                "drop_rate" : 25, 
+                "min_quantity" : 1,
+                "max_quantity" : 10
+            },
+            {
+                "item" : "ticket",
+                "drop_rate" : 50, 
+                "min_quantity" : 1,
+                "max_quantity" : 25
+            },
+            {
+                "item" : "sunflower seed",
+                "drop_rate" : 20,
+                "min_quantity" : 5,
+                "max_quantity" : 25
+            },
+            {
+                "currency" : "honey",
+                "drop_rate" : 100,
+                "min_quantity" : 2500,
+                "max_quantity" : 5000
+            }
+        ]
+    },
+    "werewolf" : {
+        "drops" : [
+            {
+                "item" : "royal jelly",
+                "drop_rate" : 80, 
+                "min_quantity" : 1,
+                "max_quantity" : 5
+            },
+            {
+                "item" : "pineapple",
+                "drop_rate" : 20, 
+                "min_quantity" : 1,
+                "max_quantity" : 20
+            },
+            {
+                "item" : "gum drops",
+                "drop_rate" : 50, 
+                "min_quantity" : 1,
+                "max_quantity" : 50
+            },
+            {
+                "item" : "ticket",
+                "drop_rate" : 75, 
+                "min_quantity" : 1,
+                "max_quantity" : 50
+            },
+            {
+                "item" : "sunflower seed",
+                "drop_rate" : 75,
+                "min_quantity" : 5,
+                "max_quantity" : 250
+            },
+            {
+                "item" : "glue",
+                "drop_rate" : 33,
+                "min_quantity" : 1,
+                "max_quantity" : 25
+            },
+            {
+                "currency" : "honey",
+                "drop_rate" : 100,
+                "min_quantity" : 5000,
+                "max_quantity" : 10000
+            }
+        ]
+    }
+}

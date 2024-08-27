@@ -1,0 +1,51 @@
+{
+    "tools" : {
+        "rake" : {
+            "price" : 800
+        },
+        "clippers" : {
+            "price" : 2200
+        },
+        "magnet" : {
+            "price" : 5500
+        },
+        "vacuum" : {
+            "price" : 14000
+        }
+    },
+
+    "bags" : {
+        "jar" : {
+            "price" : 650
+        },
+        "backpack" : {
+            "price" : 5500
+        },
+        "canister" : {
+            "price" : 22000
+        }
+    },
+
+    "accessories" : {
+        "helmet" : {
+            "price" : 30000,
+            "items" : {
+                "pineapples" : 5,
+                "moon charms" : 1
+            }
+        },
+        "belt pocket" : {
+            "price" : 14000,
+            "items" : {
+                "sunflower seeds" : 10
+            }
+        },
+        "basic boots" : {
+            "price" : 4400,
+            "items" : {
+                "sunflower seeds" : 3,
+                "blueberries" : 3
+            }
+        }
+    }
+}

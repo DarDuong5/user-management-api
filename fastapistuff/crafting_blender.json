@@ -1,0 +1,32 @@
+{
+    "red extract" : [
+        {"item" : "strawberry", "quantity" : 50},
+        {"item" : "royal jelly", "quantity" : 10}
+    ],
+    "blue extract" : [
+        {"item" : "blueberry", "quantity" : 50},
+        {"item" : "royal jelly", "quantity" : 10}
+    ],
+    "enzyme" : [
+        {"item" : "pineapple", "quantity" : 50},
+        {"item" : "royal jelly", "quantity" : 10}
+    ],
+    "oil" : [
+        {"item" : "sunflower seed", "quantity" : 50},
+        {"item" : "royal jelly", "quantity" : 10}
+    ],
+    "glue" : [
+        {"item" : "gum drops", "quantity" : 50},
+        {"item" : "royal jelly", "quantity" : 10}
+    ],
+    "gumdrops" : [
+        {"item" : "gum drops", "quantity" : 3},
+        {"item" : "blueberry", "quantity" : 3},
+        {"item" : "strawberry", "quantity" : 3}
+    ],
+    "moon charm" : [
+        {"item" : "gum drops", "quantity" : 5},
+        {"item" : "pineapple", "quantity" : 5},
+        {"item" : "royal jelly", "quantity" : 1}
+    ]
+}
