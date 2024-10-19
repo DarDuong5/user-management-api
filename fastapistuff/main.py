@@ -7,27 +7,29 @@ from daos.models.inventories import Inventory, CreateInventory, GetInventory
 from mobdrops import Mob, LootHandler 
 
 app = FastAPI()
-db = ServiceDB()
+# Dependency to get the database connection
+def get_db() -> ServiceDB: # type: ignore
+    db = ServiceDB()
+    try:
+        yield db
+    finally:
+        db.close()
 
-def get_user_dao(db: ServiceDB = Depends(db)):
-    return UserDAO()(connection=db)
+def get_user_dao(db: ServiceDB = Depends(get_db)) -> UserDAO:
+    return UserDAO(connection=db)
 
-def get_user_handler(dao: UserDAO = Depends(get_user_dao)):
-    return UserHandler()(user_dao=dao)
+def get_inventory_dao(db: ServiceDB = Depends(get_db)) -> InventoryDAO:
+    return InventoryDAO(connection=db)
 
-@app.get("/inventory/create")
-def create_inventory(req: CreateInventory, inventory: InventoryHandler = Depends(get_user_handler)) -> Inventory:
-    return inventory.create_inventory(req)
+def get_user_handler(dao: UserDAO = Depends(get_user_dao)) -> UserHandler:
+    return UserHandler(user_dao=dao)
 
-@app.get("/inventory")
-def get_inventory(req: GetInventory, inventory: InventoryHandler = Depends(get_user_handler)) -> Inventory:
-    return inventory.get_inventory(req)
+def get_inventory_handler(dao: InventoryDAO = Depends(get_inventory_dao)) -> InventoryHandler:
+    return InventoryHandler(inventory_dao=dao)
 
-
-#@app.post("/kill-mob")
-#def kill_mob(mob_type : Mob = Query(..., description="choose the mob you want to defeat")):
-
-
+@app.post("/user/create", response_model=User)
+async def create_user(req: CreateUser, user_handler: UserHandler = Depends(get_user_handler)) -> User:
+    return user_handler.create_user(req)
 
 
 
